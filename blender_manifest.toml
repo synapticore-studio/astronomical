@@ -1,0 +1,42 @@
+schema_version = "1.0.0"
+
+# Basic Extension Info
+id = "astronomical_blender_extension"
+version = "2.0.0"
+name = "Astronomical Blender Extension"
+tagline = "Professional astronomical visualization tools for Blender 4.4"
+maintainer = "Astronomical Developer <astro@blender.org>"
+type = "add-on"
+
+# Version Requirements (MUSS 3-stellig sein! X.X.X Format)
+blender_version_min = "4.4.0"
+
+# License
+license = ["SPDX:GPL-3.0-or-later"]
+
+# Platforms (all supported)
+platforms = ["windows-x64", "windows-arm64", "macos-x64", "macos-arm64", "linux-x64"]
+
+# Tags
+tags = ["3D View", "Animation", "Render"]
+
+# Permissions
+[permissions]
+files = "Save and load astronomical data and configuration files"
+
+# Build Configuration
+[build]
+paths_exclude_pattern = [
+    "__pycache__/",
+    "*.pyc",
+    "*.pyo", 
+    ".git/",
+    ".gitignore",
+    ".idea/",
+    "*.log",
+    "test_*.py",
+    "tests/",
+    "docs/",
+    "*.zip",
+    ".vscode/"
+]
