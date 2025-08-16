@@ -5,7 +5,7 @@ id = "astronomical_blender_extension"
 version = "2.0.0"
 name = "Astronomical Blender Extension"
 tagline = "Professional astronomical visualization tools for Blender 4.4"
-maintainer = "Astronomical Developer <astro@blender.org>"
+maintainer = "Astronomical Developer <bjoern.bethge@gmail.com>"
 type = "add-on"
 
 # Version Requirements (MUSS 3-stellig sein! X.X.X Format)
