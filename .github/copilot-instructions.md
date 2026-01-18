@@ -53,8 +53,10 @@ astronomical/
 - **Operator naming**: Use `ALBPY_OT_` prefix for operator classes (e.g., `ALBPY_OT_CreateStar`)
   - Note: "ALBPY" is the project's Blender operator prefix (Astronomical BLender PYthon)
 - **Property naming**: Use descriptive names with proper units in descriptions
-- **bl_idname format**: Use `albpy.operation_name` (lowercase, underscores)
-  - The bl_idname uses lowercase version of the operator prefix
+- **bl_idname format**: Use `astronomical.operation_name` (lowercase, underscores)
+  - Example: `bl_idname = "astronomical.create_star"`
+- **Panel naming**: Use `ASTRO_PT_` or `ASTRONOMICAL_PT_` prefix for panel classes
+  - Example: `bl_idname = "ASTRO_PT_main_panel"`
 - **Registration**: All operators, panels, and properties must be properly registered/unregistered
 - **Modern APIs**: Use Blender 4.4+ APIs (e.g., `bpy.utils.expose_bundled_modules()`)
 - **Node Interface API**: Use modern node interface API, not legacy socket creation
