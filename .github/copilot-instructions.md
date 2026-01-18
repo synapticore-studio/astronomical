@@ -51,8 +51,10 @@ astronomical/
 
 ### Blender-Specific Conventions
 - **Operator naming**: Use `ALBPY_OT_` prefix for operator classes (e.g., `ALBPY_OT_CreateStar`)
+  - Note: "ALBPY" is the project's Blender operator prefix (Astronomical BLender PYthon)
 - **Property naming**: Use descriptive names with proper units in descriptions
 - **bl_idname format**: Use `albpy.operation_name` (lowercase, underscores)
+  - The bl_idname uses lowercase version of the operator prefix
 - **Registration**: All operators, panels, and properties must be properly registered/unregistered
 - **Modern APIs**: Use Blender 4.4+ APIs (e.g., `bpy.utils.expose_bundled_modules()`)
 - **Node Interface API**: Use modern node interface API, not legacy socket creation
@@ -93,11 +95,19 @@ Output: `astronomical_blender_extension-2.0.0.zip`
 
 ### Testing
 ```bash
-# Run tests in Blender Python console
+# Manual testing in Blender
+# 1. Build the extension (see Building section above)
+# 2. Install in Blender: Edit → Preferences → Get Extensions → Install from Disk
+# 3. Enable the extension in the extensions list
+# 4. Test operators in 3D Viewport (press N, find "Astronomical" tab)
+
+# Automated tests (if implemented)
 blender --background --python-console
 >>> import astronomical
->>> astronomical.test()
+>>> # Run test suite if available
 ```
+
+Note: Currently testing is primarily manual. Automated test infrastructure can be added in the future.
 
 ### Installation Testing
 1. Build the extension
