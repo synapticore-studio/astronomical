@@ -1,5 +1,7 @@
 # Astronomical
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N71WOHZ3)
+
 Professional astronomical visualization tools for Blender 4.4+
 
 ![Blender](https://img.shields.io/badge/Blender-4.4+-orange.svg)
